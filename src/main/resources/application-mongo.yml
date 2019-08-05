@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: renren_fast
+      authentication-database: admin
+      uri: mongodb://jesse:king@127.0.0.1:27017

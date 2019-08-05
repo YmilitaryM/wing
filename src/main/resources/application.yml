@@ -1,0 +1,19 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 9090
+  connection-timeout: 5000ms
+  servlet:
+    context-path: /renren-fast
+
+spring:
+  # 环境 dev|test|prod
+  profiles:
+    active: postgre, redis, kafka, mongo
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
