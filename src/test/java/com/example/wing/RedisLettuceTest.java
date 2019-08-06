@@ -20,8 +20,8 @@ public class RedisLettuceTest {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-    @Autowired
-    private RedisTemplate<String, Serializable> redisTemplate;
+//    @Autowired
+//    private RedisTemplate<String, Serializable> redisTemplate;
 
     @Test
     public void get() {
@@ -38,9 +38,9 @@ public class RedisLettuceTest {
         String key = "sys:user:1";
         User user = new User(1l, "u1", "pa");
         System.out.println(user);
-        redisTemplate.opsForValue().set(key, user);
-        // TODO 对应 String（字符串）
-        final User user1 = (User) redisTemplate.opsForValue().get(key);
-        System.out.println(user1);
+//        redisTemplate.opsForValue().set(key, user);
+//        // TODO 对应 String（字符串）
+//        final User user1 = (User) redisTemplate.opsForValue().get(key);
+//        System.out.println(user1);
     }
 }

@@ -16,15 +16,15 @@ public class TestPostGreSQL {
 //    @Autowired
 //    UserService userService;
 
-    @Autowired
-    TestUserMapper testUserMapper;
+//    @Autowired
+//    TestUserMapper testUserMapper;
 
     @Test
     public void ContextLoads() {
 //        User user = new User(102l, "lll", "ooo");
 //        userService.saveUser(user);
 
-        TestUser testUser = new TestUser(103, "jx", "ko");
-        testUserMapper.insert(testUser);
+//        TestUser testUser = new TestUser(103, "jx", "ko");
+//        testUserMapper.insert(testUser);
     }
 }

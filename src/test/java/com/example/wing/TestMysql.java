@@ -16,7 +16,7 @@ public class TestMysql {
 
     @Test
     public void contextLoad() {
-        User user = new User(1L, "jesse", "king");
-        userService.saveUser(user);
+//        User user = new User(1L, "jesse", "king");
+//        userService.saveUser(user);
     }
 }

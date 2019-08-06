@@ -11,8 +11,8 @@ server:
 
 spring:
   # 环境 dev|test|prod
-  #profiles:
-  #  active: postgre, redis, kafka, mongo
+  profiles:
+    active: postgre, redis, kafka #, mongo
   jackson:
     serialization:
       fail-on-empty-beans: false
